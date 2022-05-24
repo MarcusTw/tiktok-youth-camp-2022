@@ -9,8 +9,8 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
+        android:layout_width="410dp"
+        android:layout_height="90dp"
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,7 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="92dp"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:layout_collapseMode="pin"
@@ -39,9 +39,11 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="410dp"
-        android:layout_height="518dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/app_bar">
 
         <LinearLayout
@@ -52,8 +54,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_movies_list"
                 android:layout_width="match_parent"
-                android:layout_height="498dp"
-                android:layout_marginBottom="40dp" />
+                android:layout_height="match_parent"
+                android:paddingBottom="92dp" />
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
