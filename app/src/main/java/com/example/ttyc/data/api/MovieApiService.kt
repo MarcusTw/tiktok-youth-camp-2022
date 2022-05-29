@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit
 
 class MovieApiService {
     companion object {
-        const val BASE_URL = "https://api.themoviedb.org/3/"
+        private const val BASE_URL = "https://api.themoviedb.org/3/"
         const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w400/"
         const val LIMIT = 20
         fun getClient(): MovieApiInterface {
@@ -24,7 +24,7 @@ class MovieApiService {
                     .newBuilder()
                     .url(url)
                     .build()
-                return@Interceptor chain.proceed(request)   //explicitly return a value from whit @ annotation. lambda always returns the value of the last expression implicitly
+                return@Interceptor chain.proceed(request)
             }
 
             val okHttpClient = OkHttpClient.Builder()

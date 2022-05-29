@@ -15,3 +15,7 @@
 4. Hit on `run app` button to run the android application.
 ![Run App](/samples/run-app.png)
 
+## Installation using APK
+1. Download the APK from the samples folder [/samples/movies.apk](https://github.com/MarcusTw/tiktok-youth-camp-2022/blob/main/samples/movies.apk)
+2. Install and run
+
