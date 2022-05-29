@@ -6,7 +6,8 @@ import com.example.ttyc.data.api.MovieApiInterface
 import com.example.ttyc.data.models.Movie
 import io.reactivex.disposables.CompositeDisposable
 
-class MovieDataSourceFactory (private val apiService : MovieApiInterface, private val compositeDisposable: CompositeDisposable)
+class MovieDataSourceFactory (private val apiService : MovieApiInterface,
+                              private val compositeDisposable: CompositeDisposable)
     : DataSource.Factory<Int,Movie>() {
 
     val moviesLiveDataSource =  MutableLiveData<MovieDataSource>()

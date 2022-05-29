@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 import com.example.ttyc.R
 import com.example.ttyc.data.api.MovieApiService
 import com.example.ttyc.data.api.MovieApiInterface
-import com.example.ttyc.data.api.MovieApiService.POSTER_BASE_URL
+import com.example.ttyc.data.api.MovieApiService.Companion.POSTER_BASE_URL
 import com.example.ttyc.data.repository.NetworkState
 import com.example.ttyc.data.models.MovieDetails
 import kotlinx.android.synthetic.main.movie_details.*
