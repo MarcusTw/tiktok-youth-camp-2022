@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             override fun getSpanSize(position: Int): Int {
                 val viewType = movieAdapter.getItemViewType(position)
                 return if (viewType == MOVIES_LIST_VIEW) 1
-                else 1
+                else 3
             }
         }
 

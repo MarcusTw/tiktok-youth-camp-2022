@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.ttyc.R
-import com.example.ttyc.data.api.MovieApiService.POSTER_BASE_URL
+import com.example.ttyc.data.api.MovieApiService.Companion.POSTER_BASE_URL
 import com.example.ttyc.data.repository.NetworkState
 import com.example.ttyc.data.models.Movie
 import com.example.ttyc.ui.details.MovieDetails

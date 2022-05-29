@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
 import androidx.paging.LivePagedListBuilder
 import androidx.paging.PagedList
-import com.example.ttyc.data.api.MovieApiService.LIMIT
 import com.example.ttyc.data.api.MovieApiInterface
+import com.example.ttyc.data.api.MovieApiService.Companion.LIMIT
 import com.example.ttyc.data.repository.MovieDataSource
 import com.example.ttyc.data.repository.MovieDataSourceFactory
 import com.example.ttyc.data.repository.NetworkState
